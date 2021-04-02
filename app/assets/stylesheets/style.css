@@ -3,8 +3,23 @@ height: 100px;
 width: 100%;
 }
 
+.grid-6{
+  background-color: chartreuse;
+}
+
+.post{
+background-color: coral;
+}
+
 .hakahaka{
+  height: 500px;
   background-color: aqua;
+  display: flex;
+}
+
+.nda{
+  height: 50px;
+  background-color: blue;
 }
 
 footer{
