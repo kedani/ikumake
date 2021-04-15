@@ -31,5 +31,8 @@ footer{
 }
 
 .now{
+  background-color: blueviolet;
   color: aquamarine;
+  height:100px
+  
 }
