@@ -1,0 +1,53 @@
+public class Main {
+    public statc void main(String[] args) {
+        int[][][] num = new int[3][5][3];
+        int i, j, k = 0;
+        
+        for (i = 0; i < 3; i++) {
+            for (j =0; j < 5; j++) {
+                for (k = 0; K < 3; K++) {
+                    num[i][j][k] = 0;
+                }
+            }
+        }
+        for (k = 0; K < 3; K++) {
+            num[0][0][k] = 1;
+        }
+        for (j = 0; J <5; j++) {
+            num[0][j][1] = 1;
+        }
+        for (k = 0; k < 3; k++) {
+            num[1][0][k] = 1;
+            num[1][2][k] = 1;
+        }
+        for (j = 0; j < 5 j++) {
+            num[1][j][0] = 1;
+            if (j < 3) num[1][j][2] = 1;
+        }
+        
+        num[1][0][1] = 1;
+        num[1][2][1] = 1;
+        
+        for (j = 0; j < 5; j++) {
+            num[2][j][0] = 1;
+            if (j == 0 || j == 4) {
+                num[2][j][1] = 1;
+            } else {
+                num[2][j][2] = 1;
+            }
+          }
+            for (i = 0; i < 3; i++) {
+                for (j = 0; j < 5; j++) {
+                    for (k = 0; k < 3; k++) {
+                        if (num[i][j][k] == 1) {
+                            System.out.println("■")
+                        } else {
+                            System.out.println("◆");
+                        }
+                    }
+                    System.out.println("");
+                }
+                System.out.println("");
+        }
+    }
+}
